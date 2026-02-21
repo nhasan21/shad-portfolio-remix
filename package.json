@@ -1,9 +1,9 @@
 {
-  "name": "portfolio",
-  "homepage": "https://hamishw.com",
-  "description": "Portfolio site for Hamish Williams",
-  "repository": "https://github.com/HamishMW/portfolio.git",
-  "author": "Hamish Williams",
+  "name": "shad-portfolio-remix",
+  "homepage": "https://shadhasan.com",
+  "description": "Cybersecurity portfolio for Shad Hasan",
+  "repository": "https://github.com/nhasan21/shad-portfolio-remix.git",
+  "author": "Shad Hasan",
   "sideEffects": false,
   "type": "module",
   "scripts": {
@@ -11,10 +11,10 @@
     "dev": "node ./scripts/dev.cjs && remix vite:dev",
     "start": "wrangler pages dev ./build/client",
     "postinstall": "node ./scripts/draco.cjs",
-    "deploy": "npm run build && wrangler pages deploy ./build/client --project-name portfolio",
+    "deploy": "npm run build && wrangler pages deploy ./build/client --project-name shad-portfolio-remix",
     "dev:storybook": "storybook dev -p 6006",
     "build:storybook": "storybook build",
-    "deploy:storybook": "wrangler pages deploy ./storybook-static --project-name portfolio-storybook --branch main"
+    "deploy:storybook": "wrangler pages deploy ./storybook-static --project-name shad-portfolio-remix-storybook --branch main"
   },
   "dependencies": {
     "@aws-sdk/client-ses": "^3.515.0",
@@ -29,6 +29,7 @@
     "react-dom": "^18.2.0",
     "rehype-img-size": "^1.0.1",
     "rehype-slug": "^6.0.0",
+    "rehype-prism": "^2.3.3",
     "three": "^0.161.0",
     "three-stdlib": "^2.29.4"
   },
